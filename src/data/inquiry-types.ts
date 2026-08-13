@@ -1,0 +1,25 @@
+export const inquiryTypes = [
+  "Request a Quote",
+  "Equipment Request",
+  "Equipment Availability",
+  "Oilfield Equipment",
+  "Well Services",
+  "Well Testing",
+  "Three-Phase Separator",
+  "Mechanical Services",
+  "Machining Services",
+  "Dynamic Balancing",
+  "Electrical Equipment",
+  "Transformers",
+  "Pipes & Tubing",
+  "Flanges & Fittings",
+  "Industrial Gaskets",
+  "Turbomachinery",
+  "Industrial Motors",
+  "Industrial Tools",
+  "Procurement",
+  "Partnership / Business Inquiry",
+  "General Inquiry",
+] as const;
+
+export type InquiryType = (typeof inquiryTypes)[number];
