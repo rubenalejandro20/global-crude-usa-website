@@ -1,6 +1,7 @@
 import { useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { asset } from "@/lib/asset";
 import { Icon } from "./Icon";
 
 export type LightboxImage = {
@@ -97,7 +98,7 @@ export function Lightbox({ images, index, onClose, onNavigate, title }: Lightbox
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={current.src}
+              src={asset(current.src)}
               alt={current.alt}
               className="max-h-[70vh] w-auto max-w-full object-contain rounded-[4px] shadow-2xl"
             />

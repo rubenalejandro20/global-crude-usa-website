@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import type { Service } from "@/data/services";
 import { useRfq } from "@/hooks/useRfq";
+import { asset } from "@/lib/asset";
 import { Button } from "./Button";
 import { Icon } from "./Icon";
 import { Lightbox } from "./Lightbox";
@@ -99,7 +100,7 @@ export function ServiceBlock({ service, reverse = false }: ServiceBlockProps) {
             aria-label={`View larger image: ${primary.alt}`}
           >
             <img
-              src={primary.src}
+              src={asset(primary.src)}
               alt={primary.alt}
               loading="lazy"
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -123,7 +124,7 @@ export function ServiceBlock({ service, reverse = false }: ServiceBlockProps) {
               aria-label={`View larger image: ${img.alt}`}
             >
               <img
-                src={img.src}
+                src={asset(img.src)}
                 alt={img.alt}
                 loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"

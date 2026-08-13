@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/SectionHeader";
+import { asset } from "@/lib/asset";
 
 const capabilities = [
   "Electrical equipment",
@@ -63,7 +64,7 @@ export function About() {
               className="absolute inset-0 rounded-[6px] overflow-hidden shadow-xl"
             >
               <img
-                src="/images/about/about-separator.jpg"
+                src={asset("/images/about/about-separator.jpg")}
                 alt="Three-phase separator equipment deployed for well testing operations"
                 className="h-full w-full object-cover"
                 loading="lazy"
@@ -78,7 +79,7 @@ export function About() {
               className="absolute -bottom-8 -left-6 sm:-left-10 w-[52%] aspect-[4/3] rounded-[6px] overflow-hidden shadow-xl border-4 border-white"
             >
               <img
-                src="/images/about/about-cnc.jpg"
+                src={asset("/images/about/about-cnc.jpg")}
                 alt="CNC machining center used for industrial part fabrication"
                 className="h-full w-full object-cover"
                 loading="lazy"

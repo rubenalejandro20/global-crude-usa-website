@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { navigation } from "@/data/navigation";
 import { company } from "@/data/company";
 import { useRfq } from "@/hooks/useRfq";
+import { asset } from "@/lib/asset";
 import { Icon } from "./Icon";
 import { Button } from "./Button";
 
@@ -36,7 +37,7 @@ export function Navbar() {
       <div className="container-industrial flex items-center justify-between h-[76px]">
         <a href="#home" className="flex items-center shrink-0" aria-label="Global Crude USA Inc. home">
           <img
-            src={isSolid ? "/images/brand/global-crude-logo.png" : "/images/brand/global-crude-logo-white.png"}
+            src={asset(isSolid ? "/images/brand/global-crude-logo.png" : "/images/brand/global-crude-logo-white.png")}
             alt="Global Crude USA Inc."
             className="h-11 sm:h-12 w-auto transition-opacity duration-300"
           />

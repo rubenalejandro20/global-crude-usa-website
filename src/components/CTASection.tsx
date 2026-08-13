@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
+import { asset } from "@/lib/asset";
 
 type CTASectionProps = {
   title: ReactNode;
@@ -14,7 +15,7 @@ export function CTASection({ title, description, backgroundImage, children, id }
     <section id={id} className="relative overflow-hidden bg-navy-deep">
       {backgroundImage && (
         <>
-          <img src={backgroundImage} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+          <img src={asset(backgroundImage)} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/95 to-navy-deep/70" />
         </>
       )}

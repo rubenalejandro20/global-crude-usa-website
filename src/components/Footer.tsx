@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { company } from "@/data/company";
 import { navigation } from "@/data/navigation";
+import { asset } from "@/lib/asset";
 import { Icon } from "./Icon";
 import { Modal } from "./Modal";
 import { PrivacyPolicyContent, TermsOfUseContent } from "./LegalContent";
@@ -15,7 +16,7 @@ export function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr_1fr] gap-12 lg:gap-8">
           <div className="flex flex-col gap-5">
             <img
-              src="/images/brand/global-crude-logo-white.png"
+              src={asset("/images/brand/global-crude-logo-white.png")}
               alt="Global Crude USA Inc."
               className="h-12 w-auto self-start shrink-0"
             />

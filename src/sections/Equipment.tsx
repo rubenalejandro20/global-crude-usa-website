@@ -5,6 +5,7 @@ import { Icon } from "@/components/Icon";
 import { Lightbox } from "@/components/Lightbox";
 import { Button } from "@/components/Button";
 import { useRfq } from "@/hooks/useRfq";
+import { asset } from "@/lib/asset";
 import { equipmentCategories } from "@/data/equipment";
 
 export function Equipment() {
@@ -41,7 +42,7 @@ export function Equipment() {
                 aria-label={`View ${category.name} photos`}
               >
                 <img
-                  src={category.images[0].src}
+                  src={asset(category.images[0].src)}
                   alt={category.images[0].alt}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"

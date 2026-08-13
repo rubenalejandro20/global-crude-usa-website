@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useRfq } from "@/hooks/useRfq";
+import { asset } from "@/lib/asset";
 import { Button } from "@/components/Button";
 import { Icon } from "@/components/Icon";
 
@@ -15,7 +16,7 @@ export function Hero() {
         className="absolute inset-0"
       >
         <img
-          src="/images/hero/refinery-tanks-dusk.jpg"
+          src={asset("/images/hero/refinery-tanks-dusk.jpg")}
           alt="Industrial refinery storage tanks and processing towers at dusk"
           className="h-full w-full object-cover"
           fetchPriority="high"

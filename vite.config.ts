@@ -5,6 +5,7 @@ import path from 'node:path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/global-crude-usa-website/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
