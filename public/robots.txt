@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rubenalejandro20.github.io/global-crude-usa-website/sitemap.xml
+Sitemap: https://globalcrudeusainc.com/sitemap.xml

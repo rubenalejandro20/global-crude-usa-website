@@ -26,5 +26,5 @@ export const company = {
 
   addressLines: ["4020 N MacArthur Blvd", "Irving, TX 75038", "United States"],
 
-  siteUrl: "https://rubenalejandro20.github.io/global-crude-usa-website",
+  siteUrl: "https://globalcrudeusainc.com",
 } as const;
