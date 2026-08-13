@@ -3,8 +3,8 @@ export const company = {
   shortName: "Global Crude",
   tagline: "Oilfield Equipment • Industrial Services • Procurement Solutions",
 
-  email: "globalcrude175@gmail.com",
-  emailHref: "mailto:globalcrude175@gmail.com",
+  email: "info@globalcrudeusainc.com",
+  emailHref: "mailto:info@globalcrudeusainc.com",
 
   phone: {
     display: "(972) 282-5750",
